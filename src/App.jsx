@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-export default function PostsList({ src }) {
+export default function App({ src }) {
   const formatDate = (createdAt) => {
     const date = new Date(createdAt);
     return date.toLocaleDateString("ja-JP");
