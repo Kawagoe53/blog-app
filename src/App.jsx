@@ -1,7 +1,5 @@
-import { Fragment, useState } from "react";
-import { Link, Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./App.css";
-import PostsDetail from "./PostsDetail";
 
 export default function App({ src }) {
   const formatDate = (createdAt) => {
@@ -35,9 +33,6 @@ export default function App({ src }) {
           </ul>
         </Link>
       ))}
-      <Routes>
-        <Route path="/posts/:id" element={<PostsDetail />} />
-      </Routes>
     </div>
   );
 }
